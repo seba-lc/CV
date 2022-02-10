@@ -1,16 +1,50 @@
-*{
+* {
   margin: 0 !important;
   padding: 0 !important;
+  /* background-color: black !important; */
 }
-.cv-margin{
-  width: 23vw;
+body{
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.main-page{
+.main-page {
   height: 93vh;
 }
-.footer-style{
+.footer-style {
   height: 7vh;
+
 }
-.route-item{
+.route-item {
   height: 100%;
+}
+.image-style {
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.52);
+  box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.52);
+}
+.cv-margin{
+  width: 400px;
+  background-color: black;
+}
+.nav-box{
+  height: 55px;
+}
+.progress{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(150, 228, 150);
+  border: solid 1px;
+  border-radius: 0;
+  margin: 0 0.1rem !important;
+}
+.btn-nostyle{
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}
+.btn-nostyle:focus-visible{
+  outline: none;
+}
+.modal-style{
+  left: 33.33%;
+  top: 3%;
 }

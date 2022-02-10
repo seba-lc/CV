@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className='container-fluid d-flex main-page'>
-        <div className='cv-margin bg-warning d-flex align-items-center'>
+        <div className='cv-margin d-flex align-items-center justify-content-center'>
           <Margin />
         </div>
         <div className='bg-danger w-100'>
