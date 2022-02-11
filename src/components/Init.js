@@ -10,12 +10,12 @@ const Init = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="text-center">
-      <h2 className="fs-1 text-decoration-underline">HABILIDADES</h2>
+    <div className="text-center text-light border-start px-5">
+      <h2 className="fs-1 text-start mb-4">HABILIDADES</h2>
       <div className="d-flex justify-content-around">
-        <div className="w-50 m-4">
-          <h4>TECNOLOGÍAS FRONT-END</h4>
-          <ListGroup>
+        <div className="w-50 me-4">
+          <h4 className="text-start pb-1">TECNOLOGÍAS FRONT-END</h4>
+          <ListGroup className="list-style">
             <TecItem tecnology="HTML" progress={9} />
             <TecItem tecnology="CSS" progress={9} />
             <TecItem tecnology="Bootstrap" progress={9} />
@@ -26,17 +26,17 @@ const Init = () => {
             <TecItem tecnology="ReactJS" progress={9} />
             <TecItem tecnology="APIs" progress={9} />
           </ListGroup>
-          <h4 className="mt-3">TECNOLOGÍAS BACK-END</h4>
-          <ListGroup>
+          <h4 className="mt-3 text-start pb-1">TECNOLOGÍAS BACK-END</h4>
+          <ListGroup className="list-style">
             <TecItem tecnology="MongoDB" progress={1} />
             <TecItem tecnology="Express" progress={1} />
             <TecItem tecnology="React Native" progress={6} />
             <TecItem tecnology="Node JS" progress={4} />
           </ListGroup>
         </div>
-        <div className="w-50 m-4">
-          <h4>IDIOMAS</h4>
-          <ListGroup>
+        <div className="w-50 ms-4">
+          <h4 className="text-start pb-1">IDIOMAS</h4>
+          <ListGroup className="list-style">
             <ListGroup.Item className="text-start px-2 py-1">
               ESPAÑOL (NATIVO)
             </ListGroup.Item>
@@ -64,15 +64,23 @@ const Init = () => {
                 </button>
               </p>
 
-              <Modal show={show} onHide={handleClose} className="position-fixed modal-style">
+              <Modal
+                show={show}
+                onHide={handleClose}
+                className="position-fixed modal-style"
+              >
                 {/* <Modal.Header closeButton>
                   <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header> */}
                 <Modal.Body>
-                <embed src={toeflTest} type="application/pdf" width={500} height={600} />
+                  <embed
+                    src={toeflTest}
+                    type="application/pdf"
+                    width={500}
+                    height={600}
+                  />
                 </Modal.Body>
               </Modal>
-              
             </ListGroup.Item>
           </ListGroup>
         </div>

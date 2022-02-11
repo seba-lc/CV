@@ -2,28 +2,33 @@
   margin: 0 !important;
   padding: 0 !important;
   /* background-color: black !important; */
+  
+
 }
 body{
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: #29313a;
+  background: -webkit-linear-gradient(to right, #1b2127, #38424d);
+  background: linear-gradient(to right, #161b20, #313942);
+
 }
 .main-page {
-  height: 93vh;
+  height: 100vh;
 }
 .footer-style {
-  height: 7vh;
-
+  width: 100%;
+  background-color: transparent;
 }
 .route-item {
   height: 100%;
 }
 .image-style {
-  -webkit-box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.52);
-  box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
+  box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
 }
 .cv-margin{
   width: 400px;
-  background-color: black;
+  background-color: transparent;
 }
 .nav-box{
   height: 55px;
@@ -47,4 +52,25 @@ body{
 .modal-style{
   left: 33.33%;
   top: 3%;
+}
+/* .footer-font{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 13px !important;
+  font-weight: 100 !important;
+  
+} */
+.disabled-forme{
+  color: #c5c5c5 !important;
+}
+.list-style{
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
+  box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
+}
+.footer-font{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 10px !important;
+  font-weight: 100 !important;
+  color: #c5c5c5 !important;
 }
