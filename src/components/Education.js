@@ -1,6 +1,6 @@
 const Education = ({width}) => {
   return (
-    <div className={`text-start display-6 d-flex flex-column justify-content-center align-items-start text-light border-start ${width < 1200 ? 'px-3 mt-4' : 'px-5'}`}>
+    <div className={`text-start display-6 d-flex flex-column justify-content-center align-items-start text-light ${width < 1200 ? 'px-3 mt-4' : 'px-5 border-start'}`}>
       <h2 className="mb-2">EDUCACIÓN</h2>
       <p className="fs-6 my-2 text-decoration-underline">FORMACION ACADEMICA</p>
       <p className="fs-6 my-1">♦ FULL STACK DEVELOPER - EN CURSO - Rolling Code School.</p>

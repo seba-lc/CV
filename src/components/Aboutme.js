@@ -1,6 +1,6 @@
 const Aboutme = ({width}) => {
   return (
-    <div className={`text-start display-6 d-flex flex-column justify-content-center align-items-start text-light border-start ${width < 1200 ? 'px-3 mt-4' : 'px-5'}`}>
+    <div className={`text-start display-6 d-flex flex-column justify-content-center align-items-start text-light ${width < 1200 ? 'px-3 mt-4' : 'border-start px-5'}`}>
       <h2 className="mb-2">ABOUT-ME</h2>
       <p className="fs-6 my-1 text-decoration-underline">EXTRACTO</p>
       <p className="fs-6 my-1">En el 2021 decidí perseguir un sueño, convertirme en desarrollador web. Actualmente transitando el camino del back-end (MongoDB, Express, React, NodeJS), luego de haber finalizado con front-end (HTML, CSS, JavaScript, Frameworks, ReactJS, Git). Enamorado de la profesión, muy entusiasmado y motivado por abrirme paso en este maravilloso mundo. </p>

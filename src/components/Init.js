@@ -10,7 +10,7 @@ const Init = ({width}) => {
   // const handleShow = () => setShow(true);
 
   return (
-    <div className="text-center text-light border-start container-fluid">
+    <div className={`text-center text-light container-fluid ${width < 1200 ? null : 'border-start'}`}>
       <h2 className={`fs-2 mb-3 px-3 ${width < 1200 ? 'text-center mt-5' : 'text-start'}`}>HABILIDADES</h2>
       <div className="d-flex justify-content-around row">
         <div className={`col-12 col-lg-6 px-3 ${width < 1200 ? 'list-box' : null}`}>
