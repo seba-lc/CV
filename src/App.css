@@ -13,7 +13,8 @@ body{
 
 }
 .main-page {
-  height: 100vh;
+  height: 100vh !important;
+  padding-top: 65px !important;
 }
 .footer-style {
   width: 100%;
@@ -27,15 +28,25 @@ body{
   box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
 }
 .cv-margin{
-  width: 400px;
+  /* width: 400px; */
   background-color: transparent;
 }
 .nav-box{
-  height: 55px;
+  /* height: 60px; */
+  background-color: rgba(252, 252, 252, 0.4) !important;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 10;
+}
+@media screen and (min-width: 992px){
+  .nav-box{
+    height: 60px;
+    background-color: rgba(252, 252, 252, 0.2) !important;
+  }
 }
 .progress{
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   background-color: rgb(150, 228, 150);
   border: solid 1px;
   border-radius: 0;
@@ -73,4 +84,16 @@ body{
   font-size: 10px !important;
   font-weight: 100 !important;
   color: #c5c5c5 !important;
+}
+.fs-7{
+  font-size: 14px;
+}
+.py-05{
+  padding-top: 0.15rem !important;
+  padding-bottom: 0.15rem !important;
+}
+@media screen and (min-width: 576px) {
+  .list-box{
+    width: 576px;
+  }
 }

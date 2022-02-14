@@ -9,26 +9,45 @@ import Optional from "./components/Optional";
 import Aboutme from "./components/Aboutme";
 import Education from "./components/Education";
 import Portfolio from "./components/Portfolio";
+import { Container, Row, Col } from "react-bootstrap";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [width, setWidth] = useState (window.innerWidth);
+
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    handleResize();
+  }, [])
+
+
   return (
     <>
-      <div className="container-fluid d-flex main-page">
-        <div className="cv-margin">
-          <Margin />
-        </div>
-        <div className="bg-transparent w-100 d-flex flex-column justify-content-between ">
-          <Header />
-          <Routes>
-            <Route exact path="/" element={<Init />} />
-            <Route exact path="/optional" element={<Optional />} />
-            <Route exact path="/aboutme" element={<Aboutme />} />
-            <Route exact path="/education" element={<Education />} />
-            <Route exact path="/portfolio" element={<Portfolio />} />
-          </Routes>
-          <Footer />
-        </div>
-      </div>
+      <Container fluid className="main-page">
+        <Row className="h-100">
+          <Header width = {width} />
+          <Col xl={3} className="cv-margin">
+            <Margin width = {width} />
+          </Col>
+          <Col
+            xl={9}
+            className="bg-transparent d-flex flex-column justify-content-between"
+          >
+            <Routes>
+              <Route exact path="/" element={<Init width = {width} />} />
+              <Route exact path="/optional" element={<Optional />} />
+              <Route exact path="/aboutme" element={<Aboutme width = {width} />} />
+              <Route exact path="/education" element={<Education width = {width} />} />
+              <Route exact path="/portfolio" element={<Portfolio />} />
+            </Routes>
+            <Footer width = {width} />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

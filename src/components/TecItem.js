@@ -2,7 +2,7 @@ import { ListGroup } from "react-bootstrap";
 
 const TecItem = (props) => {
   return (
-    <ListGroup.Item className="d-flex justify-content-between align-items-center px-2 py-1">
+    <ListGroup.Item className="d-flex justify-content-between align-items-center px-2 py-05">
       {props.tecnology}
       <div className="d-flex">
         <div className={props.progress >= 1 ? 'progress bg-success' : 'progress'}></div>
