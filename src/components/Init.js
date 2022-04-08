@@ -1,6 +1,5 @@
 import { ListGroup, Button, Modal } from "react-bootstrap";
 import TecItem from "./TecItem";
-import toeflTest from "./../files/toefl.pdf";
 import { useState } from "react";
 import Resume from "./common/Resume";
 
@@ -59,32 +58,7 @@ const Init = ({width}) => {
               </p>
               <p className="my-2 pt-1 border-top text-start">
                 En el año 2020 rendí el examen TOEFL iBT: High-Intermediate{" "}
-                {
-                  width < 576 ? null : (
-                <button
-                  className="btn-nostyle fst-italic ps-1"
-                  onClick={handleShow}
-                >
-                  Ver Documento
-                </button>
-                  )
-                }
               </p>
-
-              <Modal
-                show={show}
-                onHide={handleClose}
-                className="modal-style"
-              >
-                <Modal.Body>
-                  <embed
-                    src={toeflTest}
-                    type="application/pdf"
-                    width={500}
-                    height={600}
-                  />
-                </Modal.Body>
-              </Modal>
             </ListGroup.Item>
           </ListGroup>
         </div>
