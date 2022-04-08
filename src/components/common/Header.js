@@ -9,7 +9,7 @@ const Header = ({width}) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Link to='/' className={`mx-3 nav-link ${width < 992 ? 'text-dark' : 'text-light'}`}>Inicio</Link>
-            <Link to='/aboutme' className={`mx-3 nav-link ${width < 992 ? 'text-dark' : 'text-light'}`}>About me</Link>
+            <Link to='/aboutme' className={`mx-3 nav-link ${width < 992 ? 'text-dark' : 'text-light'}`}>Sobre mi</Link>
             <Link to='/education' className={`mx-3 nav-link ${width < 992 ? 'text-dark' : 'text-light'}`}>Educación</Link>
             <Link to='/portfolio' className={`ms-3 me-5 nav-link disabled-forme disabled`}>Portafolio (próximamente)</Link>
           </Nav>

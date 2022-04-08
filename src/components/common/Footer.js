@@ -20,7 +20,7 @@ const Footer = ({width}) => {
       </div>
       <div className={width < 579 ? "col-12 text-center footer-font mt-1 ms-auto" : "position-absolute end-0 bottom-0 m-1 footer-font text-center"}>
         <p className="fst-italic">Currently v1.0</p>
-        <p className="fst-italic">Last Update: 14/02/2022</p>
+        <p className="fst-italic">Last Update: 18/02/2022</p>
       </div>
     </div>
   );

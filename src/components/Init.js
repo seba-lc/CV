@@ -28,10 +28,9 @@ const Init = ({width}) => {
           </ListGroup>
           <h4 className="mt-3 text-start pb-1 fs-5">TECNOLOGÍAS BACK-END</h4>
           <ListGroup className="list-style">
-            <TecItem tecnology="MongoDB" progress={1} />
-            <TecItem tecnology="Express" progress={1} />
-            <TecItem tecnology="React Native" progress={6} />
-            <TecItem tecnology="Node JS" progress={4} />
+            <TecItem tecnology="MongoDB" progress={8} />
+            <TecItem tecnology="Express" progress={8} />
+            <TecItem tecnology="Node JS" progress={8} />
           </ListGroup>
         </div>
         <div className={`px-3 col-12 col-lg-6 ${width < 1200 ? 'list-box' : null}`}>

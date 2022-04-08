@@ -1,9 +1,9 @@
 const Aboutme = ({width}) => {
   return (
     <div className={`text-start display-6 d-flex flex-column justify-content-center align-items-start text-light ${width < 1200 ? 'px-3 mt-4' : 'border-start px-5'}`}>
-      <h2 className="mb-2">ABOUT-ME</h2>
+      <h2 className="mb-2">SOBRE MI</h2>
       <p className="fs-6 my-1 text-decoration-underline">EXTRACTO</p>
-      <p className="fs-6 my-1">En el 2021 decidí perseguir un sueño, convertirme en desarrollador web. Actualmente transitando el camino del back-end (MongoDB, Express, React, NodeJS), luego de haber finalizado con front-end (HTML, CSS, JavaScript, Frameworks, ReactJS, Git). Enamorado de la profesión, muy entusiasmado y motivado por abrirme paso en este maravilloso mundo. </p>
+      <p className="fs-6 my-1">En el 2021 decidí perseguir un sueño, convertirme en desarrollador web. Actualmente transitando el camino del back-end (MongoDB, Express, NodeJS), luego de haber finalizado con front-end (HTML, CSS, JavaScript, Frameworks, ReactJS, Git). Enamorado de la profesión, muy entusiasmado y motivado por abrirme paso en este maravilloso mundo. </p>
       <p className="fs-6 my-1">Ingeniero Civil graduado de la Universidad Nacional de Tucumán, con experiencia en el sector del cálculo estructural, y en la dirección técnica de obras. También experiencia como ayudante estudiantil de la Universidad.</p>
       <p className="fs-6 my-1">Todo alineado con una única directriz: CREAR. Ahora en un mundo sin límites ni fronteras: el mundo de la tecnología.</p>
       <p className="fs-6 my-2 text-decoration-underline">DATOS PERSONALES</p>
