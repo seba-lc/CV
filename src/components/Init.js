@@ -53,7 +53,7 @@ const Init = ({width}) => {
             <TecItem tecnology="• Speaking" progress={7} />
             <ListGroup.Item className="text-center px-2 py-1">
               <p className="text-start my-2 fst-italic">
-                "Si bien durante toda mi vida el idioma inglés fue parte (colegio, cursos, exámenes), en el año 2021 tuve el agrado
+                "Si bien durante toda mi vida el idioma inglés fue partee (colegio, cursos, exámenes), en el año 2021 tuve el agrado
                 de realizar una experiencia de 5 meses en un país de habla inglesa que
                 permitió mejorar mis habilidades"
               </p>
