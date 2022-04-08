@@ -19,7 +19,7 @@ const Init = ({width}) => {
             <TecItem tecnology="HTML" progress={9} />
             <TecItem tecnology="CSS" progress={9} />
             <TecItem tecnology="Bootstrap" progress={9} />
-            <TecItem tecnology="Metodología SCRUM" progress={5} />
+            <TecItem tecnology="Metodología SCRUM" progress={9} />
             <TecItem tecnology="Git / GitHub" progress={9} />
             <TecItem tecnology="Diseños Responsive" progress={9} />
             <TecItem tecnology="JavaScript" progress={9} />
@@ -28,9 +28,9 @@ const Init = ({width}) => {
           </ListGroup>
           <h4 className="mt-3 text-start pb-1 fs-5">TECNOLOGÍAS BACK-END</h4>
           <ListGroup className="list-style">
-            <TecItem tecnology="MongoDB" progress={8} />
-            <TecItem tecnology="Express" progress={8} />
-            <TecItem tecnology="Node JS" progress={8} />
+            <TecItem tecnology="MongoDB" progress={9} />
+            <TecItem tecnology="Express" progress={9} />
+            <TecItem tecnology="Node JS" progress={9} />
           </ListGroup>
         </div>
         <div className={`px-3 col-12 col-lg-6 ${width < 1200 ? 'list-box' : null}`}>
