@@ -22,6 +22,10 @@ function App() {
   useEffect(() => {
     window.addEventListener('resize', handleResize)
     handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
   }, [])
 
 
@@ -35,14 +39,14 @@ function App() {
           </Col>
           <Col
             xl={9}
-            className="bg-transparent d-flex flex-column justify-content-between"
+            className="bg-transparent d-flex flex-column justify-content-start position-relative"
           >
             <Routes>
               <Route exact path="/" element={<Init width = {width} />} />
               <Route exact path="/optional" element={<Optional />} />
               <Route exact path="/aboutme" element={<Aboutme width = {width} />} />
               <Route exact path="/education" element={<Education width = {width} />} />
-              <Route exact path="/portfolio" element={<Portfolio />} />
+              <Route exact path="/portfolio" element={<Portfolio width = {width} />} />
             </Routes>
             <Footer width = {width} />
           </Col>

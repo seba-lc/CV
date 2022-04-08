@@ -26,6 +26,11 @@ body{
 .image-style {
   -webkit-box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
   box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
+  width: 150px;
+  height: 150px;
+  background-image: url(./assets/img-cv-2.webp);
+  background-size: cover;
+  background-position: 8px 0px;
 }
 .cv-margin{
   /* width: 400px; */
@@ -33,15 +38,28 @@ body{
 }
 .nav-box{
   /* height: 60px; */
-  background-color: rgba(252, 252, 252, 0.4) !important;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  background-color: rgb(83, 88, 94) !important;
   z-index: 10;
+  transition: 500ms;
 }
+
+.nav-box_top{
+  background-color: transparent !important;
+  transition: 500ms;
+}
+
+.collapse_true{
+  background-color: rgb(83, 88, 94) !important;
+}
+
+.text-darkk{
+  color: black !important;
+}
+
 @media screen and (min-width: 992px){
   .nav-box{
     height: 60px;
-    background-color: rgba(252, 252, 252, 0.2) !important;
+    /* background-color: rgb(83, 88, 94) !important; */
   }
 }
 .progress{
@@ -60,17 +78,7 @@ body{
 .btn-nostyle:focus-visible{
   outline: none;
 }
-.modal-style{
-  left: 33.33%;
-  top: 3%;
-}
-/* .footer-font{
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 13px !important;
-  font-weight: 100 !important;
-  
-} */
+
 .disabled-forme{
   color: #c5c5c5 !important;
 }
@@ -96,4 +104,52 @@ body{
   .list-box{
     width: 576px;
   }
+}
+
+.footer-general-style{
+  justify-self: flex-end !important;
+}
+
+.version-style{
+  width: 150px;
+}
+
+.proyect-box{
+  width: 200px;
+  height: 150px;
+  border-radius: 30px;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
+  box-shadow: 5px 5px 13px -1px rgba(255, 255, 255, 0.52);
+}
+
+.proyect-box:hover{
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.bg-opacity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -1px !important;
+  cursor: pointer;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+#marketar{
+  background-image: url(./assets/market-img.webp);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
 }
