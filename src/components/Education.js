@@ -13,7 +13,7 @@ const Education = ({width}) => {
       <p className="fs-7 my-1">♦ Capacitación en el software de cálculo estructural RAM ELEMENTS. Universidad Nacional de Tucumán: 2018</p>
       <p className="fs-7 my-1">♦ UNSTA Facultad de Humanidades, Lenguaje Extranjero (2018): Inglés B1</p>
       <h2 className="my-2">EXPERIENCIA LABORAL</h2>
-      <p className="fs-7 my-1">♦ Proyecto Web full stack - freelancer: plataforma e-commerce (Febrero / Actualidad)</p>
+      <p className="fs-7 my-1">♦ Proyecto Web full stack - freelancer: plataforma e-commerce (Febrero 2022 / Actualidad)</p>
       <p className="fs-7 my-1">♦ Dirección técninca de obra: Ampliación de Hotel (2021)</p>
       <p className="fs-7 my-1">♦ VAS & Asociacos (2020): Ingeniero en diseño y cálculo de estructuras</p>
       <p className="fs-7 my-1">♦ Sigma Constructora (2019): Ayudante de Jefe de Obra</p>

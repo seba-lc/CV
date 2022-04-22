@@ -48,7 +48,7 @@ const Init = ({width}) => {
             </ListGroup.Item>
             <TecItem tecnology="• Reading" progress={9} />
             <TecItem tecnology="• Listening" progress={8} />
-            <TecItem tecnology="• Writing" progress={7} />
+            <TecItem tecnology="• Writing" progress={9} />
             <TecItem tecnology="• Speaking" progress={7} />
             <ListGroup.Item className="text-center px-2 py-1">
               <p className="text-start my-2 fst-italic">
